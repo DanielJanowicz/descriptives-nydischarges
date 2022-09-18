@@ -49,3 +49,11 @@ df1_table = TableOne(data1, columns=df1_columns,
 print(df1_table.tabulate(tablefmt = "fancy_grid"))
 # Grid can help explain the percentage of the types of admission and their race based on gender
 
+### Providing values within the dataset ###
+print(data1_gender)
+print(data1_race)
+print(data1_admission_type)
+print(data1_payment_type)
+print(data1_description)
+
+
