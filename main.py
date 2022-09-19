@@ -56,4 +56,41 @@ print(data1_admission_type)
 print(data1_payment_type)
 print(data1_description)
 
+##### Calculating mean age #####
+data1['Age_Group'].unique() # Obtaining unique data names
+
+## Assigning variables
+df_count = data1['Age_Group'].count()
+df_really_old = 0 # 70 or older
+df_semi_old = 0 # 50-69
+df_mid_old = 0 # 30-49
+df_young = 0 # 18-29
+df_really_young = 0 # 0-17
+
+age = data1['Age_Group']
+
+def age_counter(age):
+    if age == '70 or Older':
+        global df_really_old
+        df_really_old += 1
+        return df_really_old
+    elif age == '50-69':
+        global df_semi_old
+        df_semi_old += 1
+        return df_semi_old
+    elif age == '30-49':
+        global df_mid_old
+        df_mid_old += 1
+        return df_mid_old
+    elif age == '18-29':
+        global df_young
+        df_young += 1
+        return df_young
+    elif age == '0-17':
+        global df_really_young
+        df_really_young + 1
+        return df_really_young
+        
+## Could not get this to work ^ 
+
 
