@@ -92,5 +92,16 @@ def age_counter(age):
         return df_really_young
         
 ## Could not get this to work ^ 
+## The work below is a continueation of the work above
+## Basically I would take the count of each age group and create a new array to determine the mean age (range)
 
+total_age_count = [df_really_old, df_semi_old, df_mid_old, df_young, df_really_young]
+total_age_count.mean()
 
+## List not working, as it has no attribute for "mean"
+## I will try to use a dictionary instead
+
+total_age_count_dict = dict[df_really_old, df_semi_old, df_mid_old, df_young, df_really_young]
+total_age_count_dict.mean() 
+
+## Now errors with dict and no attribute for "mean"
